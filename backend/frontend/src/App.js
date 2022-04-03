@@ -103,7 +103,7 @@ function App() {
     try {
       axios.post("/pins/delete", newPin);
       const newArr = pins.filter((item) => {
-        return item._id != currentPlaceId;
+        return item._id !== currentPlaceId;
       });
       setPins(newArr);
       setNewPlace(null);

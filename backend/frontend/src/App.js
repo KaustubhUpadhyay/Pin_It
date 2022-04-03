@@ -121,7 +121,7 @@ function App() {
         // Created own map and using it through URL
         mapStyle="mapbox://styles/zapdos/cl1hom06y000m14o3g1lwwzqo"
         // Token for API request
-        mapboxAccessToken={process.env.REACT_APP_MAPBOX}
+        mapboxAccessToken="pk.eyJ1IjoiemFwZG9zIiwiYSI6ImNsMWhlOWIwZzAzb3EzZmxkbzFmY2ppeGYifQ.L04mZ5v_NVddf2NS22Td9Q"
         onViewportChange={(nextViewport) => setViewport(nextViewport)}
         onDblClick={handleAddClick}
       >

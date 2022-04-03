@@ -3,7 +3,6 @@ import Map, { Marker, Popup } from "react-map-gl";
 import { Room, Star } from "@material-ui/icons";
 import "./app.css";
 import axios from "axios";
-import { format } from "timeago.js";
 import Login from "./components/Login";
 import Register from "./components/Register";
 
@@ -169,7 +168,7 @@ function App() {
                     {" "}
                     Created by <b>{pin.username}</b>
                   </span>
-                  <span className="date">{format(pin.createdAt)}</span>
+               
 
                   {(pin.username === currentUser || currentUser === adminUser) && (
                     <button

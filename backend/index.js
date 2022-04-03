@@ -22,6 +22,10 @@ app.use("/api/users", userRoute);
 
 const PORT = process.env.PORT || 8800;
 
+if(process.env.NODE_ENV == "production"){
+  app.use(express.static("frontend/build"));
+}
+
 app.listen(PORT, () => {
   console.log("App is running");
 });

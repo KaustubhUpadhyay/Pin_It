@@ -11,7 +11,7 @@ dotenv.config();
 app.use(express.json());
 
 mongoose
-  .connect(process.env.MONGO_URL, { useNewUrlParser: true })
+  .connect("mongodb+srv://admin-kaustubh:hayday95@cluster0.pxqap.mongodb.net/pin?retryWrites=true&w=majority", { useNewUrlParser: true })
   .then(() => {
     console.log("Connected");
   })
